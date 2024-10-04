@@ -1,20 +1,18 @@
 # Use a lightweight Node.js image as the base
-FROM node:18-alpine
+FROM node:22-alpine
 
-# Install Docker CLI inside the container
-RUN apk add --no-cache docker-cli bash
+# Install Docker CLI, bash, and zsh
+RUN apk add --no-cache docker-cli bash zsh
 
 # Set working directory
 WORKDIR /usr/src/app
 
-# Ensure the "soos" directory is removed if it exists, and install SOOS scripts
-RUN [ -d "./soos" ] && rm -rf "./soos" || true
-RUN npm install --prefix ./soos @soos-io/soos-sca
+# Copy your project files and the script into the container
+COPY . .
+COPY init-demo-env.sh /usr/src/app/init-demo-env.sh
 
-# Copy your project files into the container if there are any additional scripts to include
-# ex: sarif files, SBOMs, etc
-# or map to a local dir with various demo files?
-# COPY . .
+# Make the script executable
+RUN chmod +x /usr/src/app/init-demo-env.sh
 
-# Open the shell when the container starts
-CMD ["bash"]
+# Use the script to start the container
+CMD ["/usr/src/app/init-demo-env.sh"]
