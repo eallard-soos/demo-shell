@@ -1,0 +1,305 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:c9df1747-1e89-4be1-8313-66437075472e",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-04-30T12:59:33Z",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "SOOS SCA",
+          "version": "32.3.10.1",
+          "externalReferences": [
+            {
+              "url": "https://soos.io/",
+              "type": "website"
+            },
+            {
+              "url": "https://soos.io/terms-of-service",
+              "type": "license",
+              "comment": "SOOS is providing this SBOM for non-commercial use. By downloading an SBOM from SOOS, you agree to all applicable terms at https://soos.io/terms-of-service. If you are interested in commercial SBOM access please contact sales@soos.io"
+            }
+          ]
+        }
+      ]
+    },
+    "authors": [
+      {
+        "email": "support@soos.io"
+      }
+    ],
+    "component": {
+      "type": "library",
+      "author": "  (support@soos.io)",
+      "publisher": "SOOS",
+      "name": "redis",
+      "version": "4.5.2",
+      "description": "SOOS SCA scan against pkg:pypi/redis@4.5.2",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e9129979785ddfba786384836e366c39f7e1197e698220919001f2692b4cddb0"
+        }
+      ]
+    },
+    "licenses": [
+      {
+        "license": {
+          "id": "CC0-1.0"
+        }
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/async-timeout@4.0.3",
+      "supplier": {
+        "name": "aio-libs",
+        "url": [
+          "https://github.com/aio-libs/async-timeout"
+        ],
+        "contact": [
+          {
+            "name": "Andrew Svetlov \u003Candrew.svetlov@gmail.com\u003E",
+            "email": "andrew.svetlov@gmail.com"
+          }
+        ]
+      },
+      "name": "async-timeout",
+      "version": "4.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7405140ff1230c310e51dc27b3145b9092d659ce68ff733fb0cefe3ee42be028"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "4640d96be84d82d02ed59ea2b7105a0f7b33abe8703703cd0ab0bf87c427522f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/async-timeout@4.0.3",
+      "externalReferences": [
+        {
+          "url": "https://pypi.org/project/async-timeout/4.0.3",
+          "type": "website"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/importlib-metadata@7.1.0",
+      "supplier": {
+        "name": "python",
+        "url": [
+          "https://github.com/python/importlib_metadata"
+        ],
+        "contact": [
+          {
+            "name": "Jason R. Coombs",
+            "email": "jaraco@jaraco.com"
+          }
+        ]
+      },
+      "name": "importlib-metadata",
+      "version": "7.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "30962b96c0c223483ed6cc7280e7f0199feb01a0e40cfae4d4450fc6fab1f570"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b78938b926ee8d5f020fc4772d487045805a55ddbad2ecf21c6d60938dc7fcd2"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache Software License"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/importlib-metadata@7.1.0",
+      "externalReferences": [
+        {
+          "url": "https://pypi.org/project/importlib-metadata/7.1.0",
+          "type": "website"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/redis@4.5.2",
+      "supplier": {
+        "name": "redis",
+        "url": [
+          "https://github.com/redis/redis-py"
+        ],
+        "contact": [
+          {
+            "name": "Redis Inc.",
+            "email": "oss@redis.com"
+          }
+        ]
+      },
+      "name": "redis",
+      "version": "4.5.2",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4b12b3a1e9bfb43dc533330ec6d142329d0c27ea6bb6716a9d0389e8f2038a4e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "d8ae1a4f725eea6e3958411870fdf944c587b00ea12be28d3bd5575d8f26430c"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/redis@4.5.2",
+      "externalReferences": [
+        {
+          "url": "https://pypi.org/project/redis/4.5.2",
+          "type": "website"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/typing-extensions@4.11.0",
+      "supplier": {
+        "contact": []
+      },
+      "name": "typing-extensions",
+      "version": "4.11.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c1f94d72897edaf4ce775bb7558d5b79d8126906a14ea5ed1635921406c0387a"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "83f085bd5ca59c80295fc2a82ab5dac679cbe02b9f33f7d83af68e241bea51b0"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "PSF-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/typing-extensions@4.11.0",
+      "externalReferences": [
+        {
+          "url": "https://pypi.org/project/typing-extensions/4.11.0",
+          "type": "website"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/zipp@3.18.1",
+      "supplier": {
+        "name": "jaraco",
+        "url": [
+          "https://github.com/jaraco/zipp"
+        ],
+        "contact": [
+          {
+            "name": "Jason R. Coombs",
+            "email": "jaraco@jaraco.com"
+          }
+        ]
+      },
+      "name": "zipp",
+      "version": "3.18.1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "206f5a15f2af3dbaee80769fb7dc6f249695e940acca08dfb2a4769fe61e538b"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "2884ed22e7d8961de1c9a05142eb69a247f120291bc0206a00a7642f09b5b715"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/zipp@3.18.1",
+      "externalReferences": [
+        {
+          "url": "https://pypi.org/project/zipp/3.18.1",
+          "type": "website"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:pypi/async-timeout@4.0.3",
+      "dependsOn": [
+        "pkg:pypi/typing-extensions@4.11.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/importlib-metadata@7.1.0",
+      "dependsOn": [
+        "pkg:pypi/typing-extensions@4.11.0",
+        "pkg:pypi/zipp@3.18.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/redis@4.5.2",
+      "dependsOn": [
+        "pkg:pypi/async-timeout@4.0.3",
+        "pkg:pypi/importlib-metadata@7.1.0",
+        "pkg:pypi/typing-extensions@4.11.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/typing-extensions@4.11.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/zipp@3.18.1",
+      "dependsOn": []
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "complete",
+      "dependencies": [
+        "pkg:pypi/async-timeout@4.0.3",
+        "pkg:pypi/importlib-metadata@7.1.0",
+        "pkg:pypi/redis@4.5.2",
+        "pkg:pypi/typing-extensions@4.11.0",
+        "pkg:pypi/zipp@3.18.1"
+      ]
+    },
+    {
+      "aggregate": "incomplete",
+      "dependencies": []
+    }
+  ]
+}
