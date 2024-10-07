@@ -1,5 +1,5 @@
 # Use a lightweight Node.js image as the base
-FROM node:22-alpine
+FROM node:20-alpine
 
 # Install Docker CLI, bash, and zsh
 RUN apk add --no-cache docker-cli bash zsh
@@ -10,6 +10,7 @@ WORKDIR /usr/src/app
 # Copy your project files and the script into the container
 COPY . .
 COPY init-demo-env.sh /usr/src/app/init-demo-env.sh
+
 
 # Make the script executable
 RUN chmod +x /usr/src/app/init-demo-env.sh
