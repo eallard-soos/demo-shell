@@ -1,5 +1,6 @@
 #!/bin/bash
-# Ensure fresh installation of SOOS package
+
+# Ensure latest of SOOS packages
 [ -d "./soos" ] && rm -rf "./soos"
 npm install --prefix ./soos @soos-io/soos-sca
 npm install --prefix ./soos @soos-io/soos-sbom
