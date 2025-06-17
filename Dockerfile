@@ -11,7 +11,6 @@ WORKDIR /usr/src/app
 COPY . .
 COPY init-demo-env.sh /usr/src/app/init-demo-env.sh
 
-
 # Make the script executable
 RUN chmod +x /usr/src/app/init-demo-env.sh
 
