@@ -1,5 +1,5 @@
 # Use a lightweight Node.js image as the base
-FROM node:20-alpine
+FROM node:22-alpine
 
 # Install Docker CLI, bash, and zsh
 RUN apk add --no-cache docker-cli bash zsh
