@@ -14,6 +14,7 @@ npm install --prefix ./soos @soos-io/soos-sast
 
 docker pull soosio/dast
 docker pull soosio/csa
+docker pull soosio/sast
 
 ############################################
 # 2) Commit the *running* container
